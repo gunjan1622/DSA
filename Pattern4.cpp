@@ -1,21 +1,19 @@
 #include<iostream>
 using namespace std;
-
 int main()
 {
-    int n;
+    int n, num=1;
     cout<<"Enter number of rows";
     cin>>n;
-    int i =1;
-    while(i<=n)
+
+    for(int i=0; i<=n; i++)
     {
-        int j=1;
-        while(j<= n)
+        for(int j=0; j<=i; j++)
         {
-            cout<<n-j+1<<" ";
-            j= j+1;
+            cout<<num<<" ";
+           num++;
         }
         cout<<endl;
-        i=i+1;
+        
     }
 }
