@@ -1,16 +1,27 @@
 #include<iostream>
-#include<conio.h>
 using namespace std;
 
 int main()
 {
-    int n;
-    cin>>n;
+    //sum of n numbers
+    // int n;
+    // cout<<"Enter a number: ";
+    // cin>>n;
+    // int sum = 0;
+    // for(int i=1; i<=n; i++)
+    // {
+    //     sum = sum + i;
+    // }
+    // cout<<sum<<endl;
 
-    int i=1;
-    while(i<=n)
+    //fibonacci
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+    int f = 1;
+    for(int i=1; i<=n; i++)
     {
-        cout<<i<<endl;
-        i= i+1;
+        f = f * i;
     }
+    cout<<f<<endl;
 }
